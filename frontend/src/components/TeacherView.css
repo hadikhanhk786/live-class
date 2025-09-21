@@ -1,0 +1,208 @@
+/* Apply full-page layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Main Chat Container */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Navigation Bar */
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation Buttons */
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .start-button, .end-button, .leave-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .start-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .end-button {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .leave-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .start-button:hover {
+    background-color: #218838;
+  }
+  
+  .end-button:hover {
+    background-color: #e0a800;
+  }
+  
+  .leave-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Main Content Layout */
+  .main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  /* Sidebar (Teachers & Students List) */
+  .sidebar {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+  }
+  
+  /* Sidebar Titles */
+  .sidebar h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* User Lists */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    background: #eef2f7;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Remove Button */
+  .remove-btn {
+    /* background: red; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  .remove-btn:hover {
+    background: red;
+  }
+  
+  /* Chat Box */
+  .chat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  
+  /* Messages Section */
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    max-height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Individual Message Styles */
+  .messages li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .my-message {
+    background-color: #007bff;
+    align-self: flex-end;
+  }
+  
+  .other-message {
+    background-color: #f1f1f1;
+  }
+  
+  .system-message {
+    background-color: #ffd700;
+    font-weight: bold;
+  }
+  
+  /* Message Input Section */
+  .message-input {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .message-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .message-input button:hover {
+    background-color: #007bff;
+  }
+  

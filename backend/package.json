@@ -1,0 +1,28 @@
+{
+    "name": "live-classroom-backend",
+    "version": "1.0.0",
+    "description": "Backend for live classroom application",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "dev": "nodemon server.js",
+      "init-db": "psql -U hahikhan -d live_classroom -f models/schema.sql"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "pg": "^8.7.1",
+      "multer": "^1.4.3",
+      "socket.io": "^4.4.1",
+      "jsonwebtoken": "^8.5.1",
+      "bcryptjs": "^2.4.3",
+      "dotenv": "^16.0.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.15"
+    },
+    "keywords": ["classroom", "live", "socket.io", "react", "node", "postgresql"],
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  
